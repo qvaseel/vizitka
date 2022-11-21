@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь</title>
+    
+</head>
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <div id="wrapper"> 
+        <header>
+            <a href="index.html" id="logo"><span class="pink">Сайт</span> <i>визитка</i></a>       
+                <nav id="mainnav">
+                    <ul>
+                        <li><a href="uslugi.html" target="_blank">услуги</a></li>
+                        <li class="liii">-----</li>
+                        <li><a href="onas.html" target="_blank">о нас</a></li>
+                        <li class="liii">-----</li>
+                        <li><a href="klienti.html" target="_blank">клиенты</a></li>
+                        <li class="liii">-----</li>
+                        <li><a href="kontakti.html" target="_blank">контакты</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <main>
+            <form action="" id="contact-form">
+                <div class="form_item">
+                    <label for="topic">Тема</label><br>
+                    <select name="topic" id="topic" required="">
+                        <option value="1">Заказать услугу</option>
+                        <option value="2">Оставить отзыв/замечание</option>
+                        <option value="3">Предложить сотрудничество</option>
+                        <option value="4">Другое</option>
+                    </select>
+                </div>
+                <div class="form_item">
+                    <label for="name">Имя</label><br>
+                    <input name="name" id="pole" type="text" placeholder="Иван" required="" maxlength="10">
+                </div>
+                <div class="form_item">
+                    <label for="phone">Номер телефона</label><br>
+                    <input name="phone" id="pole" type="phone" placeholder="+7 (900) 000-00-00" required="">
+                </div>
+                <div class="form_item">
+                    <label for="email">E-mail</label><br>
+                    <input name="email" id="pole" type="email" placeholder="ivan@gmail.com" required="">
+                </div>
+                <div class="form_item">
+                    <label for="text">Текст сообщения</label><br>
+                    <input class="intext" name="text" id="pole" placeholder="Хорошая работа!">
+                </div>
+                <div class="form_item">
+                    <label for="file">Прикрепить файл</label><br>
+                    <input name="file" id="pole" type="file" accept="image/*">
+                </div>
+                <div class="form_item">
+                    <input type="submit">
+                </div>
+                <div class="form_item">
+                    <input type="reset">
+                </div>
+            </form>
+        </main>
+    </div>
+    <footer>
+        <p class="footer_block">Написать нам &#9650;</p>
+        <p class="footer_block">&copy; Новая компания</p>
+        <div class="footer_icons">
+            <a href="instagram.com" target="_blank"><img src="img/instagram.png" alt="Иконка - Инстаграм" class="footer_img"></a>
+            <a href="vk.com" target="_blank"><img src="img/vk-social-logotype.png" alt="Иконка - Вк" class="footer_img"></a>
+            <a href="facebook.com" target="_blank"><img src="img/facebook.png" alt="Иконка - Фейсбук" class="footer_img"></a>
+        </div>
+    </footer>
+</body>
+</html>
